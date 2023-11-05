@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  direction: rtl;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
