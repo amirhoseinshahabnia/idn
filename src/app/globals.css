@@ -29,3 +29,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.custom-li {
+  counter-reset: item;
+}
+
+.custom-li li {
+  display: block;
+}
+
+.custom-li li::before {
+  content: counters(item, '.') '. ';
+  counter-increment: item;
+}
